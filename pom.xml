@@ -1,0 +1,53 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	
+	<groupId>com.queomedia</groupId>
+	<artifactId>queo-commons-equals</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	
+	<name>queo commons equals</name>
+	<description>some interfaces and classes used for advanced equals checking</description>
+		
+	<issueManagement>
+    	<system>mantis</system>
+    	<url>http://mantistest.queo.local</url>
+  	</issueManagement>
+
+  	<scm>
+    	<connection>scm:svn:http://skylla/queo_commons/java/queo-commons-equals/trunk</connection>
+    	<developerConnection>scm:svn:http://skylla/queo_commons/java/queo-commons-equals/trunk</developerConnection>
+    	<url>http://skylla/queo_commons/java/queo-commons-equals/trunk</url>
+  	</scm>
+  	
+	<developers>	
+		<developer>
+			<organization>queo</organization>
+			<name>Ralph Engelmann</name>
+			<email>ralph.engelmann@queo-media.com</email>
+		</developer>
+	</developers>
+	
+	<distributionManagement>    
+    	<snapshotRepository>
+	      	<id>Snapshots</id>
+	      	<name>Internal Snapshots</name>
+	      	<url>http://localhost:8081/nexus/content/repositories/snapshots</url>
+    	</snapshotRepository>    
+  	</distributionManagement>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.6</source>
+					<target>1.6</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+
+</project>
