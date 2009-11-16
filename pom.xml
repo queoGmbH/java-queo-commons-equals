@@ -32,9 +32,14 @@
     	<snapshotRepository>
 	      	<id>Snapshots</id>
 	      	<name>Internal Snapshots</name>
-	      	<url>http://localhost:8081/nexus/content/repositories/snapshots</url>
+	      	<url>http://skylla:8080/nexus/content/repositories/com.queomedia-snapshot</url>
     	</snapshotRepository>    
   	</distributionManagement>
+
+	<properties>
+    	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  	</properties>
+
 
 	<build>
 		<plugins>
