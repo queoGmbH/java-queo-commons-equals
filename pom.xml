@@ -4,7 +4,7 @@
 	
 	<groupId>com.queomedia</groupId>
 	<artifactId>queo-commons-equals</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.2-SNAPSHOT</version>
 	
 	<name>queo commons equals</name>
 	<description>some interfaces and classes used for advanced equals checking</description>
