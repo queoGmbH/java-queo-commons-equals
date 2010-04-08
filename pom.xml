@@ -1,10 +1,9 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	
 	<groupId>com.queomedia</groupId>
 	<artifactId>queo-commons-equals</artifactId>
-	<version>0.0.2-SNAPSHOT</version>
+	<version>1.0.0-SNAPSHOT</version>
 	
 	<name>queo commons equals</name>
 	<description>some interfaces and classes used for advanced equals checking</description>
@@ -15,9 +14,9 @@
   	</issueManagement>
 
   	<scm>
-    	<connection>scm:svn:http://skylla/queo_commons/java/queo-commons-equals/trunk</connection>
-    	<developerConnection>scm:svn:http://skylla/queo_commons/java/queo-commons-equals/trunk</developerConnection>
-    	<url>http://skylla/queo_commons/java/queo-commons-equals/trunk</url>
+    	<connection>scm:svn:svn://skylla/queo_commons/java/queo-commons-equals/tags/queo-commons-equals-1.0.0</connection>
+    	<developerConnection>scm:svn:svn://skylla/queo_commons/java/queo-commons-equals/tags/queo-commons-equals-1.0.0</developerConnection>
+    	<url>http://skylla/queo_commons/java/queo-commons-equals/tags/queo-commons-equals-1.0.0</url>
   	</scm>
   	
 	<developers>	
