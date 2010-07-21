@@ -1,48 +1,64 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	
+
 	<groupId>com.queomedia</groupId>
 	<artifactId>queo-commons-equals</artifactId>
-	<version>1.0.1-SNAPSHOT</version>
-	
-	<name>queo commons equals</name>
-	<description>some interfaces and classes used for advanced equals checking</description>
-		
-	<issueManagement>
-    	<system>mantis</system>
-    	<url>http://mantistest.queo.local</url>
-  	</issueManagement>
+	<version>1.1.0</version>
 
-  	<scm>
-    	<connection>scm:svn:svn://skylla/queo_commons/java/queo-commons-equals/tags/queo-commons-equals-1.0.0</connection>
-    	<developerConnection>scm:svn:svn://skylla/queo_commons/java/queo-commons-equals/tags/queo-commons-equals-1.0.0</developerConnection>
-    	<url>http://skylla/queo_commons/java/queo-commons-equals/tags/queo-commons-equals-1.0.0</url>
-  	</scm>
-  	
-  	
+	<name>queo commons equals</name>
+	<description>some interfaces and classes used for advanced equals
+		checking</description>
+
+	<issueManagement>
+		<system>mantis</system>
+		<url>http://mantistest.queo.local</url>
+	</issueManagement>
+
+	<scm>
+		<connection>scm:svn:svn://skylla/queo_commons/java/queo-commons-equals/tags/queo-commons-equals-1.1.0
+		</connection>
+		<developerConnection>scm:svn:svn://skylla/queo_commons/java/queo-commons-equals/tags/queo-commons-equals-1.1.0
+		</developerConnection>
+		<url>http://skylla/queo_commons/java/queo-commons-equals/tags/queo-commons-equals-1.1.0
+		</url>
+	</scm>
+
+
 	<distributionManagement>
 		<repository>
 			<id>com.queomedia</id>
-			<url>http://skylla:8080/nexus/content/repositories/com.queomedia</url>
+			<url>http://skylla:8080/nexus/content/repositories/com.queomedia
+			</url>
 		</repository>
 		<snapshotRepository>
 			<id>com.queomedia-snapshot</id>
-			<url>http://skylla:8080/nexus/content/repositories/com.queomedia-snapshot</url>
+			<url>http://skylla:8080/nexus/content/repositories/com.queomedia-snapshot
+			</url>
 		</snapshotRepository>
 	</distributionManagement>
-  	
-	<developers>	
+
+	<developers>
 		<developer>
 			<organization>queo</organization>
 			<name>Ralph Engelmann</name>
 			<email>ralph.engelmann@queo-media.com</email>
 		</developer>
 	</developers>
-	
+
 
 	<properties>
-    	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-  	</properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<dependencies>
+		<!-- for unit test -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.7</version>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
 
 
 	<build>
