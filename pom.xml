@@ -6,36 +6,31 @@
 	<version>1.2.1-SNAPSHOT</version>
 
 	<name>queo commons equals</name>
-	<description>some interfaces and classes used for advanced equals
-		checking</description>
+	<description>some interfaces and classes used for advanced equals checking</description>
 
-	<issueManagement>
-		<system>mantis</system>
-		<url>http://mantistest.queo.local</url>
-	</issueManagement>
-
+	
 	<scm>
-		<connection>scm:svn:svn://skylla/queo_commons/java/queo-commons-equals/tags/queo-commons-equals-1.0.0
-		</connection>
-		<developerConnection>scm:svn:svn://skylla/queo_commons/java/queo-commons-equals/tags/queo-commons-equals-1.0.0
-		</developerConnection>
-		<url>http://skylla/queo_commons/java/queo-commons-equals/tags/queo-commons-equals-1.0.0
-		</url>
+		<connection>scm:svn:https://code.dev.queo-group.com/svn/queo_commons/java/queo-commons-equals/trunk/queo-commons-equals</connection>
+		<developerConnection>scm:svn:https://code.dev.queo-group.com/svn/queo_commons/java/queo-commons-equals/trunk/queo-commons-equals</developerConnection>
+		<url>https://code.dev.queo-group.com/svn/queo_commons/java/queo-commons-equals/trunk/queo-commons-equals</url>
 	</scm>
 
 
 	<distributionManagement>
 		<repository>
 			<id>com.queomedia</id>
-			<url>http://skylla:8080/nexus/content/repositories/com.queomedia
-			</url>
+			<url>http://java.dev.queo.local/nexus/content/repositories/com.queomedia</url>
 		</repository>
 		<snapshotRepository>
 			<id>com.queomedia-snapshot</id>
-			<url>http://skylla:8080/nexus/content/repositories/com.queomedia-snapshot
-			</url>
+			<url>http://java.dev.queo.local/nexus/content/repositories/com.queomedia-snapshot</url>
 		</snapshotRepository>
 	</distributionManagement>
+	
+	<organization>
+		<name>queo</name>
+		<url>http://www.queo-group.com</url>
+	</organization>
 
 	<developers>
 		<developer>
@@ -47,15 +42,20 @@
 
 
 	<properties>
+		<java.version>1.6</java.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 
 	<dependencies>
 		<!-- for unit test -->
+		<!-- test -->
 		<dependency>
+			<!-- The junit-dep artifact is the same as the junit artifact, expect 
+				that all dependencies are explicity declared and unbundled. All dependencies 
+				= Hamcrest core -->
 			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<version>4.7</version>
+			<artifactId>junit-dep</artifactId>
+			<version>4.11</version>
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
@@ -66,15 +66,19 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
+				<version>2.5.1</version>
 				<configuration>
-					<source>1.6</source>
-					<target>1.6</target>
+					<source>${java.version}</source>
+					<target>${java.version}</target>
 				</configuration>
 			</plugin>
+			
+			
 			<plugin>
 				<!-- deploy src and test src -->
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-source-plugin</artifactId>
+				<version>2.2</version>
 				<executions>
 					<execution>
 						<goals>
@@ -84,10 +88,12 @@
 					</execution>
 				</executions>
 			</plugin>
+
 			<plugin>
 				<!-- deploy tests -->
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-jar-plugin</artifactId>
+				<version>2.4</version>
 				<executions>
 					<execution>
 						<goals>
@@ -96,8 +102,26 @@
 					</execution>
 				</executions>
 			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-release-plugin</artifactId>
+				<version>2.3.2</version>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-javadoc-plugin</artifactId>
+				<version>2.9</version>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-deploy-plugin</artifactId>
+				<version>2.7</version>
+			</plugin>
+			
 		</plugins>
 	</build>
-
 
 </project>
