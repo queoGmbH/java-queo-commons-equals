@@ -8,6 +8,30 @@
 
 	<name>queo commons equals</name>
 	<description>some interfaces and classes used for advanced equals checking</description>
+	
+	<inceptionYear>2009</inceptionYear>
+	
+	<organization>
+		<name>queo GmbH</name>
+		<url>https://www.queo.de</url>
+	</organization>
+
+	<developers>
+		<developer>
+			<organization>queo GmbH</organization>
+			<name>Ralph Engelmann</name>
+			<email>r.engelmann@queo-group.com</email>
+		</developer>
+	</developers>
+	
+	<licenses>
+		<license>
+			<name>Apache 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+			<distribution>repo</distribution>
+			<comments>A business-friendly OSS license</comments>
+		</license>
+	</licenses>
 
 	
 	<scm>
@@ -32,20 +56,6 @@
 			<url>https://nexus.dev.queo-group.com/repository/com.queomedia-snapshot/</url>
 		</snapshotRepository>
 	</distributionManagement>
-	
-	<organization>
-		<name>queo</name>
-		<url>http://www.queo-group.com</url>
-	</organization>
-
-	<developers>
-		<developer>
-			<organization>queo</organization>
-			<name>Ralph Engelmann</name>
-			<email>ralph.engelmann@queo-media.com</email>
-		</developer>
-	</developers>
-
 
 	<properties>
 		<!-- still java 6, there is no need to require a newer version -->
