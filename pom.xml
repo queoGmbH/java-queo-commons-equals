@@ -67,12 +67,9 @@
 		<!-- for unit test -->
 		<!-- test -->
 		<dependency>
-			<!-- The junit-dep artifact is the same as the junit artifact, expect 
-				that all dependencies are explicity declared and unbundled. All dependencies 
-				= Hamcrest core -->
 			<groupId>junit</groupId>
-			<artifactId>junit-dep</artifactId>
-			<version>4.11</version>
+			<artifactId>junit</artifactId>
+			<version>4.13.2</version>
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
